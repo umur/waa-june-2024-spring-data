@@ -3,6 +3,8 @@ package edu.miu.springdata.domain;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
 
 @Data
 @NoArgsConstructor
@@ -15,7 +17,7 @@ public class User {
 
     @Column(unique = true, nullable = false, name = "email")
     private String email;
-    
+
     @Column(nullable = false, name = "password_hash")
     private String password;
 
@@ -26,5 +28,6 @@ public class User {
     private String lastName;
 
     @OneToOne(mappedBy = "user", orphanRemoval = true, cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @Fetch(FetchMode.JOIN)
     private Address address;
 }
