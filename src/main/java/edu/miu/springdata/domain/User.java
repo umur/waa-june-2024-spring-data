@@ -27,7 +27,8 @@ public class User {
     @Column(nullable = false, name = "last_name", length = 50)
     private String lastName;
 
-    @OneToOne(mappedBy = "user", orphanRemoval = true, cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @OneToOne(orphanRemoval = true, cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @Fetch(FetchMode.JOIN)
+    @JoinColumn(name = "address_id", nullable = false, unique = true)
     private Address address;
 }

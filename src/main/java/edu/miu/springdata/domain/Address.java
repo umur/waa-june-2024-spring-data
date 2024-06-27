@@ -22,8 +22,4 @@ public class Address {
 
     @Column(name = "city", nullable = false, length = 30)
     private String city;
-    
-    @OneToOne
-    @JoinColumn(name = "user_id", nullable = false, unique = true)
-    private User user;
 }
