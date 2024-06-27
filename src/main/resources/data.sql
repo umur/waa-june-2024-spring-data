@@ -1,18 +1,18 @@
--- Inserting users
-INSERT INTO users (id, email, password_hash, first_name, last_name)
-VALUES (1, 'user1@miu.edu', 'password1', 'John', 'Doe'),
-       (2, 'user2@miu.edu', 'password2', 'Jane', 'Smith'),
-       (3, 'user3@miu.edu', 'password3', 'Alice', 'Johnson'),
-       (4, 'user4@miu.edu', 'password4', 'Bob', 'Williams'),
-       (5, 'user5@miu.edu', 'password5', 'Charlie', 'Brown');
-
 -- Inserting addresses for users
-INSERT INTO addresses (id, street, zip, city, user_id)
-VALUES (1, '123 Main St', '12345', 'Springfield', 1),
-       (2, '456 Elm St', '67890', 'Shelbyville', 2),
-       (3, '789 Oak St', '54321', 'Ogdenville', 3),
-       (4, '101 Maple St', '09876', 'North Haverbrook', 4),
-       (5, '202 Pine St', '11223', 'Capital City', 5);
+INSERT INTO addresses (id, street, zip, city)
+VALUES (1, '123 Main St', '12345', 'Springfield'),
+       (2, '456 Elm St', '67890', 'Shelbyville'),
+       (3, '789 Oak St', '54321', 'Ogdenville'),
+       (4, '101 Maple St', '09876', 'North Haverbrook'),
+       (5, '202 Pine St', '11223', 'Capital City');
+
+-- Inserting users
+INSERT INTO users (id, email, password_hash, first_name, last_name, address_id)
+VALUES (1, 'user1@miu.edu', 'password1', 'John', 'Doe', 1),
+       (2, 'user2@miu.edu', 'password2', 'Jane', 'Smith', 2),
+       (3, 'user3@miu.edu', 'password3', 'Alice', 'Johnson', 3),
+       (4, 'user4@miu.edu', 'password4', 'Bob', 'Williams', 4),
+       (5, 'user5@miu.edu', 'password5', 'Charlie', 'Brown', 5);
 
 -- Inserting categories
 INSERT INTO product_categories (id, name)
