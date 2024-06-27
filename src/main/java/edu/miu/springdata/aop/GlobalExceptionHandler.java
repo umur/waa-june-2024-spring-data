@@ -3,6 +3,7 @@ package edu.miu.springdata.aop;
 import edu.miu.springdata.contract.ErrorResponse;
 import edu.miu.springdata.exception.InvalidCurrentPasswordException;
 import edu.miu.springdata.exception.ResourceAlreadyExistsException;
+import edu.miu.springdata.exception.ResourceAlreadyInUseException;
 import edu.miu.springdata.exception.ResourceNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -43,6 +44,14 @@ public class GlobalExceptionHandler {
         errorResponse.setMessage(e.getMessage());
 
         return ResponseEntity.status(HttpStatus.FORBIDDEN).body(errorResponse);
+    }
+
+    @ExceptionHandler(ResourceAlreadyInUseException.class)
+    public ResponseEntity<ErrorResponse> handleException(ResourceAlreadyInUseException e) {
+        ErrorResponse errorResponse = new ErrorResponse();
+        errorResponse.setMessage(e.getMessage());
+
+        return ResponseEntity.status(HttpStatus.CONFLICT).body(errorResponse);
     }
 
 }
