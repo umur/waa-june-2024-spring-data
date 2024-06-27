@@ -1,0 +1,24 @@
+
+ˆ	java:S112 "FDefine and throw a dedicated exception instead of using a generic one.(Ã´“É8Óè´Ø…2J$89d73aa8-c423-4e43-b62e-99c2aa475e71
+ˆ	java:S112("FDefine and throw a dedicated exception instead of using a generic one.(¿Óîÿ8Ôè´Ø…2J$b8f746e2-6262-4662-863f-229f4ac07abb
+ˆ	java:S112,"FDefine and throw a dedicated exception instead of using a generic one.(Â›ú8Ôè´Ø…2J$add24373-04f8-4c91-9c79-63880b0bc544
+	java:S112B"FDefine and throw a dedicated exception instead of using a generic one.(Óîöƒşÿÿÿÿ8Ôè´Ø…2J$07419e93-740c-4d9b-ab1e-e3cc329a78ea
+	java:S112K"FDefine and throw a dedicated exception instead of using a generic one.(Óîöƒşÿÿÿÿ8Ôè´Ø…2J$e6c7695f-6740-497e-bbaf-9d1bc9009d75
+ˆ	java:S112U"FDefine and throw a dedicated exception instead of using a generic one.(¿Óîÿ8Ôè´Ø…2J$5154932f-6f19-48f9-a193-325801fd9ccb
+ˆ	java:S112Y"FDefine and throw a dedicated exception instead of using a generic one.(Â›ú8Ôè´Ø…2J$90bd77e8-b134-4865-9dd3-d4547d23e0ab
+	java:S112g"FDefine and throw a dedicated exception instead of using a generic one.(Óîöƒşÿÿÿÿ8Ôè´Ø…2J$50bb6d79-089d-439f-a72a-51b07f417778
+”
+java:S1192B"LDefine a constant instead of duplicating this literal "Review ID: " 3 times.(Óîöƒşÿÿÿÿ8Ôè´Ø…2J$b3c15c6c-3cad-4639-8e28-be1a76320b41
+‘
+java:S1192("NDefine a constant instead of duplicating this literal " is not found" 7 times.(¿Óîÿ8Ôè´Ø…2J$83e25bee-b8c7-4eca-b11b-f05567c18f16
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Ôè´Ø…2J$e1422ef5-ae32-486b-b827-d56461b244c3
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Ôè´Ø…2J$3c3cee54-b53c-4867-b0dd-6f51fedb451b
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Ôè´Ø…2J$badd16f2-859d-4cf3-91d0-ef542f34eb9c
+m	java:S106$"+Replace this use of System.out by a logger.(ôØÃé8Œ†¼Ø…2J$21f092ec-d4fd-48b4-ae19-e71c48352a6a
+Â
+java:S6204;"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ÅñÛ¥ûÿÿÿÿ8Ùè´Ø…2J$fd7598fa-1a22-4b67-b6ee-be9628291312
+Â
+java:S6204o"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ÅñÛ¥ûÿÿÿÿ8Üè´Ø…2J$7a28c7f6-9e17-494a-b789-9bbfd19c0410

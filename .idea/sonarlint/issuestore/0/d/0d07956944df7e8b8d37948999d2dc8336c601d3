@@ -1,0 +1,14 @@
+
+ˆ	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(¾¬¢8Öêˆ³…2J$8488c0c0-5808-49c6-877e-2d85a34895bd
+	java:S112""FDefine and throw a dedicated exception instead of using a generic one.(œ†»ôúÿÿÿÿ8×êˆ³…2J$b3f4b386-8e16-4164-a7c1-de1617210eaa
+ˆ	java:S1125"FDefine and throw a dedicated exception instead of using a generic one.(Ê÷™µ8×êˆ³…2J$e26e11a4-3584-438a-90ed-1accd1b09a6a
+ˆ	java:S112>"FDefine and throw a dedicated exception instead of using a generic one.(Ê÷™µ8×êˆ³…2J$b6651257-3e71-47f8-baac-8e922421fd7c
+ˆ	java:S112G"FDefine and throw a dedicated exception instead of using a generic one.(Ê÷™µ8ŒÅ×…2J$1769a000-e23b-4576-bf39-a6a3c6a9cd74
+
+java:S11925"JDefine a constant instead of duplicating this literal "User ID: " 3 times.(Ê÷™µ8×êˆ³…2J$884a005d-3c23-4f82-9f13-3da2151c4a67
+–
+java:S1192""NDefine a constant instead of duplicating this literal " is not found" 4 times.(œ†»ôúÿÿÿÿ8×êˆ³…2J$abcecf15-e65a-43d8-b423-f8434cc0bbb5
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8×êˆ³…2J$781c1326-5a13-4061-a825-c9aa1d6dcb6a
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ÒªÆ×…2J$7799755b-1d47-499a-84f3-c43ded7b8278
