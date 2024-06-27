@@ -11,6 +11,7 @@ import edu.miu.springdata.exception.ResourceNotFoundException;
 import edu.miu.springdata.repository.UserRepository;
 import edu.miu.springdata.service.UserService;
 import edu.miu.springdata.util.UserErrorMessages;
+import jakarta.transaction.Transactional;
 import org.modelmapper.ModelMapper;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -25,7 +26,7 @@ public class UserServiceImpl implements UserService {
 
     public UserServiceImpl(UserRepository userRepository, ModelMapper modelMapper) {
         this.userRepository = userRepository;
-        this.modelMapper = modelMapper;
+        this.modelMapper    = modelMapper;
     }
 
     @Override
@@ -41,6 +42,7 @@ public class UserServiceImpl implements UserService {
                 .orElseThrow(() -> new ResourceNotFoundException(UserErrorMessages.userNotFound(userId)));
     }
 
+    @Transactional
     @Override
     public UserResponse addUser(SaveUserRequest saveUserRequest) {
         User existingUser = userRepository.findFirstByEmail(saveUserRequest.getEmail()).orElse(null);
@@ -54,6 +56,7 @@ public class UserServiceImpl implements UserService {
         return modelMapper.map(user, UserResponse.class);
     }
 
+    @Transactional
     @Override
     public UserResponse updateUser(Long userId, UpdateUserRequest updateUserRequest) {
         User existingUser = userRepository.findById(userId).orElse(null);
@@ -68,6 +71,7 @@ public class UserServiceImpl implements UserService {
         return modelMapper.map(existingUser, UserResponse.class);
     }
 
+    @Transactional
     @Override
     public void updatePassword(Long userId, UpdatePasswordRequest updatePasswordRequest) {
         User user = userRepository
@@ -81,6 +85,7 @@ public class UserServiceImpl implements UserService {
         user.setPassword(updatePasswordRequest.getNewPassword());
     }
 
+    @Transactional
     @Override
     public void deleteUser(Long userId) {
         User user = userRepository.findById(userId).orElse(null);
