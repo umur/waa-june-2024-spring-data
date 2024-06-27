@@ -433,19 +433,19 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_url}}:{{port}}/product/keyword?keyword=phone",
+							"raw": "{{base_url}}:{{port}}/product/search?keyword=tion",
 							"host": [
 								"{{base_url}}"
 							],
 							"port": "{{port}}",
 							"path": [
 								"product",
-								"keyword"
+								"search"
 							],
 							"query": [
 								{
 									"key": "keyword",
-									"value": "phone"
+									"value": "tion"
 								}
 							]
 						}

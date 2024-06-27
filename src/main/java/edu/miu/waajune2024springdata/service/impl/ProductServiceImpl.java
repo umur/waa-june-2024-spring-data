@@ -86,7 +86,7 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public List<ProductDto> findProductsLike(String keyword) {
-        return repo.findByNameLikeIgnoreCase(keyword).stream().map(DtoMapper.MAPPER::entityToDto).toList();
+        return repo.findByNameContainingIgnoreCase(keyword).stream().map(DtoMapper.MAPPER::entityToDto).toList();
     }
 }
 

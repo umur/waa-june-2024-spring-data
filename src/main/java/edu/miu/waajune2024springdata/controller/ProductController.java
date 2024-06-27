@@ -31,7 +31,7 @@ public class ProductController {
         return service.findInCategoryCostingLessThan(categoryId,maxPrice);
     }
 
-    @GetMapping("/keyword")
+    @GetMapping("/search")
     public List<ProductDto> findInCategoryCostingLessThan(@RequestParam String keyword){
         return service.findProductsLike(keyword);
     }

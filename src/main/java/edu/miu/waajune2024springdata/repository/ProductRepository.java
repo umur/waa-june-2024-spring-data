@@ -14,5 +14,5 @@ public interface ProductRepository extends ListCrudRepository<Product,Long> {
 
     List<Product> findByCategory_IdAndPriceLessThan(Long categoryId, double price);
 
-    List<Product> findByNameLikeIgnoreCase(String keyword);
+    List<Product> findByNameContainingIgnoreCase(String keyword);
 }
