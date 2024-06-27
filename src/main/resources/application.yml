@@ -1,7 +1,6 @@
 spring:
   application:
     name: waa-june-2024-spring-data
-
   datasource:
     username: root
     password: 123456
@@ -24,3 +23,6 @@ spring:
   sql:
     init:
       mode: always
+server:
+  servlet:
+    context-path: /api/v1
