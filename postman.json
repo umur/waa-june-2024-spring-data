@@ -1,0 +1,1491 @@
+{
+  "item": [
+    {
+      "item": [
+        {
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "path": [
+                "api",
+                "v1",
+                "categories"
+              ],
+              "query": [],
+              "host": "http://localhost:8080",
+              "raw": "http://localhost:8080/api/v1/categories"
+            }
+          },
+          "response": [
+            {
+              "name": "getAllCategories-Example",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "path": [
+                    "api",
+                    "v1",
+                    "categories"
+                  ],
+                  "query": [],
+                  "host": "http://localhost:8080",
+                  "raw": "http://localhost:8080/api/v1/categories"
+                }
+              },
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "date",
+                  "key": "date",
+                  "value": "Thu, 04 Apr 202420:49:15 GMT",
+                  "description": "The date and time that the message was sent"
+                },
+                {
+                  "name": "server",
+                  "key": "server",
+                  "value": "Apache-Coyote/1.1",
+                  "description": "A name for the server"
+                },
+                {
+                  "name": "transfer-encoding",
+                  "key": "transfer-encoding",
+                  "value": "chunked",
+                  "description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+                },
+                {
+                  "name": "content-type",
+                  "key": "content-type",
+                  "value": "application/json;charset=UTF-8"
+                }
+              ],
+              "body": "[\n    {\n        \"id\": 0,\n        \"name\": \"\"\n    }\n]"
+            }
+          ],
+          "name": "getAllCategories"
+        },
+        {
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "path": [
+                "api",
+                "v1",
+                "categories",
+                ":id"
+              ],
+              "query": [],
+              "host": "http://localhost:8080",
+              "raw": "http://localhost:8080/api/v1/categories/{id}"
+            }
+          },
+          "response": [
+            {
+              "name": "getCategoryById-Example",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "path": [
+                    "api",
+                    "v1",
+                    "categories",
+                    ":id"
+                  ],
+                  "query": [],
+                  "host": "http://localhost:8080",
+                  "raw": "http://localhost:8080/api/v1/categories/{id}"
+                }
+              },
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "date",
+                  "key": "date",
+                  "value": "Thu, 04 Apr 202420:49:15 GMT",
+                  "description": "The date and time that the message was sent"
+                },
+                {
+                  "name": "server",
+                  "key": "server",
+                  "value": "Apache-Coyote/1.1",
+                  "description": "A name for the server"
+                },
+                {
+                  "name": "transfer-encoding",
+                  "key": "transfer-encoding",
+                  "value": "chunked",
+                  "description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+                },
+                {
+                  "name": "content-type",
+                  "key": "content-type",
+                  "value": "application/json;charset=UTF-8"
+                }
+              ],
+              "body": "{\n    \"id\": 0,\n    \"name\": \"\"\n}"
+            }
+          ],
+          "name": "getCategoryById"
+        },
+        {
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "description": ""
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              },
+              "raw": "{\n  \"id\": 0,\n  \"name\": \"\"\n}"
+            },
+            "url": {
+              "path": [
+                "api",
+                "v1",
+                "categories"
+              ],
+              "query": [],
+              "host": "http://localhost:8080",
+              "raw": "http://localhost:8080/api/v1/categories"
+            }
+          },
+          "response": [
+            {
+              "name": "createCategory-Example",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text",
+                    "description": ""
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  },
+                  "raw": "{\n    \"id\": 0,\n    \"name\": \"\"\n}"
+                },
+                "url": {
+                  "path": [
+                    "api",
+                    "v1",
+                    "categories"
+                  ],
+                  "query": [],
+                  "host": "http://localhost:8080",
+                  "raw": "http://localhost:8080/api/v1/categories"
+                }
+              },
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "date",
+                  "key": "date",
+                  "value": "Thu, 04 Apr 202420:49:15 GMT",
+                  "description": "The date and time that the message was sent"
+                },
+                {
+                  "name": "server",
+                  "key": "server",
+                  "value": "Apache-Coyote/1.1",
+                  "description": "A name for the server"
+                },
+                {
+                  "name": "transfer-encoding",
+                  "key": "transfer-encoding",
+                  "value": "chunked",
+                  "description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+                },
+                {
+                  "name": "content-type",
+                  "key": "content-type",
+                  "value": "application/json;charset=UTF-8"
+                }
+              ],
+              "body": "{\n    \"id\": 0,\n    \"name\": \"\"\n}"
+            }
+          ],
+          "name": "createCategory"
+        },
+        {
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "description": ""
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              },
+              "raw": "{\n  \"id\": 0,\n  \"name\": \"\"\n}"
+            },
+            "url": {
+              "path": [
+                "api",
+                "v1",
+                "categories",
+                ":id"
+              ],
+              "query": [],
+              "host": "http://localhost:8080",
+              "raw": "http://localhost:8080/api/v1/categories/{id}"
+            }
+          },
+          "response": [
+            {
+              "name": "updateCategory-Example",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text",
+                    "description": ""
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  },
+                  "raw": "{\n    \"id\": 0,\n    \"name\": \"\"\n}"
+                },
+                "url": {
+                  "path": [
+                    "api",
+                    "v1",
+                    "categories",
+                    ":id"
+                  ],
+                  "query": [],
+                  "host": "http://localhost:8080",
+                  "raw": "http://localhost:8080/api/v1/categories/{id}"
+                }
+              },
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "date",
+                  "key": "date",
+                  "value": "Thu, 04 Apr 202420:49:15 GMT",
+                  "description": "The date and time that the message was sent"
+                },
+                {
+                  "name": "server",
+                  "key": "server",
+                  "value": "Apache-Coyote/1.1",
+                  "description": "A name for the server"
+                },
+                {
+                  "name": "transfer-encoding",
+                  "key": "transfer-encoding",
+                  "value": "chunked",
+                  "description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+                },
+                {
+                  "name": "content-type",
+                  "key": "content-type",
+                  "value": "application/json;charset=UTF-8"
+                }
+              ],
+              "body": "{\n    \"id\": 0,\n    \"name\": \"\"\n}"
+            }
+          ],
+          "name": "updateCategory"
+        },
+        {
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+                "type": "text",
+                "description": ""
+              }
+            ],
+            "url": {
+              "path": [
+                "api",
+                "v1",
+                "categories",
+                ":id"
+              ],
+              "query": [],
+              "host": "http://localhost:8080",
+              "raw": "http://localhost:8080/api/v1/categories/{id}"
+            }
+          },
+          "response": [
+            {
+              "name": "deleteCategory-Example",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/x-www-form-urlencoded",
+                    "type": "text",
+                    "description": ""
+                  }
+                ],
+                "url": {
+                  "path": [
+                    "api",
+                    "v1",
+                    "categories",
+                    ":id"
+                  ],
+                  "query": [],
+                  "host": "http://localhost:8080",
+                  "raw": "http://localhost:8080/api/v1/categories/{id}"
+                }
+              },
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "date",
+                  "key": "date",
+                  "value": "Thu, 04 Apr 202420:49:15 GMT",
+                  "description": "The date and time that the message was sent"
+                },
+                {
+                  "name": "server",
+                  "key": "server",
+                  "value": "Apache-Coyote/1.1",
+                  "description": "A name for the server"
+                },
+                {
+                  "name": "transfer-encoding",
+                  "key": "transfer-encoding",
+                  "value": "chunked",
+                  "description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+                },
+                {
+                  "name": "content-type",
+                  "key": "content-type",
+                  "value": "application/json;charset=UTF-8"
+                }
+              ],
+              "body": "null"
+            }
+          ],
+          "name": "deleteCategory"
+        }
+      ],
+      "name": "CategoryController",
+      "description": "CategoryController"
+    },
+    {
+      "item": [
+        {
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "path": [
+                "api",
+                "v1",
+                "products"
+              ],
+              "query": [],
+              "host": "http://localhost:8080",
+              "raw": "http://localhost:8080/api/v1/products"
+            }
+          },
+          "response": [
+            {
+              "name": "getAllProducts-Example",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "path": [
+                    "api",
+                    "v1",
+                    "products"
+                  ],
+                  "query": [],
+                  "host": "http://localhost:8080",
+                  "raw": "http://localhost:8080/api/v1/products"
+                }
+              },
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "date",
+                  "key": "date",
+                  "value": "Thu, 04 Apr 202420:49:15 GMT",
+                  "description": "The date and time that the message was sent"
+                },
+                {
+                  "name": "server",
+                  "key": "server",
+                  "value": "Apache-Coyote/1.1",
+                  "description": "A name for the server"
+                },
+                {
+                  "name": "transfer-encoding",
+                  "key": "transfer-encoding",
+                  "value": "chunked",
+                  "description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+                },
+                {
+                  "name": "content-type",
+                  "key": "content-type",
+                  "value": "application/json;charset=UTF-8"
+                }
+              ],
+              "body": "[\n    {\n        \"id\": 0,\n        \"name\": \"\",\n        \"price\": 0,\n        \"rating\": 0,\n        \"category\": {\n            \"id\": 0,\n            \"name\": \"\"\n        }\n    }\n]"
+            }
+          ],
+          "name": "getAllProducts"
+        },
+        {
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "path": [
+                "api",
+                "v1",
+                "products",
+                ":id"
+              ],
+              "query": [],
+              "host": "http://localhost:8080",
+              "raw": "http://localhost:8080/api/v1/products/{id}"
+            }
+          },
+          "response": [
+            {
+              "name": "getProductById-Example",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "path": [
+                    "api",
+                    "v1",
+                    "products",
+                    ":id"
+                  ],
+                  "query": [],
+                  "host": "http://localhost:8080",
+                  "raw": "http://localhost:8080/api/v1/products/{id}"
+                }
+              },
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "date",
+                  "key": "date",
+                  "value": "Thu, 04 Apr 202420:49:15 GMT",
+                  "description": "The date and time that the message was sent"
+                },
+                {
+                  "name": "server",
+                  "key": "server",
+                  "value": "Apache-Coyote/1.1",
+                  "description": "A name for the server"
+                },
+                {
+                  "name": "transfer-encoding",
+                  "key": "transfer-encoding",
+                  "value": "chunked",
+                  "description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+                },
+                {
+                  "name": "content-type",
+                  "key": "content-type",
+                  "value": "application/json;charset=UTF-8"
+                }
+              ],
+              "body": "{\n    \"id\": 0,\n    \"name\": \"\",\n    \"price\": 0,\n    \"rating\": 0,\n    \"category\": {\n        \"id\": 0,\n        \"name\": \"\"\n    }\n}"
+            }
+          ],
+          "name": "getProductById"
+        },
+        {
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "description": ""
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              },
+              "raw": "{\n  \"id\": 0,\n  \"name\": \"\",\n  \"price\": 0,\n  \"rating\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"\"\n  }\n}"
+            },
+            "url": {
+              "path": [
+                "api",
+                "v1",
+                "products"
+              ],
+              "query": [],
+              "host": "http://localhost:8080",
+              "raw": "http://localhost:8080/api/v1/products"
+            }
+          },
+          "response": [
+            {
+              "name": "createProduct-Example",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text",
+                    "description": ""
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  },
+                  "raw": "{\n    \"id\": 0,\n    \"name\": \"\",\n    \"price\": 0,\n    \"rating\": 0,\n    \"category\": {\n        \"id\": 0,\n        \"name\": \"\"\n    }\n}"
+                },
+                "url": {
+                  "path": [
+                    "api",
+                    "v1",
+                    "products"
+                  ],
+                  "query": [],
+                  "host": "http://localhost:8080",
+                  "raw": "http://localhost:8080/api/v1/products"
+                }
+              },
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "date",
+                  "key": "date",
+                  "value": "Thu, 04 Apr 202420:49:15 GMT",
+                  "description": "The date and time that the message was sent"
+                },
+                {
+                  "name": "server",
+                  "key": "server",
+                  "value": "Apache-Coyote/1.1",
+                  "description": "A name for the server"
+                },
+                {
+                  "name": "transfer-encoding",
+                  "key": "transfer-encoding",
+                  "value": "chunked",
+                  "description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+                },
+                {
+                  "name": "content-type",
+                  "key": "content-type",
+                  "value": "application/json;charset=UTF-8"
+                }
+              ],
+              "body": "{\n    \"id\": 0,\n    \"name\": \"\",\n    \"price\": 0,\n    \"rating\": 0,\n    \"category\": {\n        \"id\": 0,\n        \"name\": \"\"\n    }\n}"
+            }
+          ],
+          "name": "createProduct"
+        },
+        {
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "description": ""
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              },
+              "raw": "{\n  \"id\": 0,\n  \"name\": \"\",\n  \"price\": 0,\n  \"rating\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"\"\n  }\n}"
+            },
+            "url": {
+              "path": [
+                "api",
+                "v1",
+                "products",
+                ":id"
+              ],
+              "query": [],
+              "host": "http://localhost:8080",
+              "raw": "http://localhost:8080/api/v1/products/{id}"
+            }
+          },
+          "response": [
+            {
+              "name": "updateProduct-Example",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text",
+                    "description": ""
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  },
+                  "raw": "{\n    \"id\": 0,\n    \"name\": \"\",\n    \"price\": 0,\n    \"rating\": 0,\n    \"category\": {\n        \"id\": 0,\n        \"name\": \"\"\n    }\n}"
+                },
+                "url": {
+                  "path": [
+                    "api",
+                    "v1",
+                    "products",
+                    ":id"
+                  ],
+                  "query": [],
+                  "host": "http://localhost:8080",
+                  "raw": "http://localhost:8080/api/v1/products/{id}"
+                }
+              },
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "date",
+                  "key": "date",
+                  "value": "Thu, 04 Apr 202420:49:15 GMT",
+                  "description": "The date and time that the message was sent"
+                },
+                {
+                  "name": "server",
+                  "key": "server",
+                  "value": "Apache-Coyote/1.1",
+                  "description": "A name for the server"
+                },
+                {
+                  "name": "transfer-encoding",
+                  "key": "transfer-encoding",
+                  "value": "chunked",
+                  "description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+                },
+                {
+                  "name": "content-type",
+                  "key": "content-type",
+                  "value": "application/json;charset=UTF-8"
+                }
+              ],
+              "body": "{\n    \"id\": 0,\n    \"name\": \"\",\n    \"price\": 0,\n    \"rating\": 0,\n    \"category\": {\n        \"id\": 0,\n        \"name\": \"\"\n    }\n}"
+            }
+          ],
+          "name": "updateProduct"
+        },
+        {
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+                "type": "text",
+                "description": ""
+              }
+            ],
+            "url": {
+              "path": [
+                "api",
+                "v1",
+                "products",
+                ":id"
+              ],
+              "query": [],
+              "host": "http://localhost:8080",
+              "raw": "http://localhost:8080/api/v1/products/{id}"
+            }
+          },
+          "response": [
+            {
+              "name": "deleteProduct-Example",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/x-www-form-urlencoded",
+                    "type": "text",
+                    "description": ""
+                  }
+                ],
+                "url": {
+                  "path": [
+                    "api",
+                    "v1",
+                    "products",
+                    ":id"
+                  ],
+                  "query": [],
+                  "host": "http://localhost:8080",
+                  "raw": "http://localhost:8080/api/v1/products/{id}"
+                }
+              },
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "date",
+                  "key": "date",
+                  "value": "Thu, 04 Apr 202420:49:15 GMT",
+                  "description": "The date and time that the message was sent"
+                },
+                {
+                  "name": "server",
+                  "key": "server",
+                  "value": "Apache-Coyote/1.1",
+                  "description": "A name for the server"
+                },
+                {
+                  "name": "transfer-encoding",
+                  "key": "transfer-encoding",
+                  "value": "chunked",
+                  "description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+                },
+                {
+                  "name": "content-type",
+                  "key": "content-type",
+                  "value": "application/json;charset=UTF-8"
+                }
+              ],
+              "body": "null"
+            }
+          ],
+          "name": "deleteProduct"
+        },
+        {
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "path": [
+                "api",
+                "v1",
+                "products",
+                "price"
+              ],
+              "query": [
+                {
+                  "key": "price",
+                  "value": "",
+                  "equals": true,
+                  "description": ""
+                }
+              ],
+              "host": "http://localhost:8080",
+              "raw": "http://localhost:8080/api/v1/products/price"
+            }
+          },
+          "response": [
+            {
+              "name": "findAllByPriceGreaterThan-Example",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "path": [
+                    "api",
+                    "v1",
+                    "products",
+                    "price"
+                  ],
+                  "query": [
+                    {
+                      "key": "price",
+                      "value": "",
+                      "equals": true,
+                      "description": ""
+                    }
+                  ],
+                  "host": "http://localhost:8080",
+                  "raw": "http://localhost:8080/api/v1/products/price"
+                }
+              },
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "date",
+                  "key": "date",
+                  "value": "Thu, 04 Apr 202420:49:15 GMT",
+                  "description": "The date and time that the message was sent"
+                },
+                {
+                  "name": "server",
+                  "key": "server",
+                  "value": "Apache-Coyote/1.1",
+                  "description": "A name for the server"
+                },
+                {
+                  "name": "transfer-encoding",
+                  "key": "transfer-encoding",
+                  "value": "chunked",
+                  "description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+                },
+                {
+                  "name": "content-type",
+                  "key": "content-type",
+                  "value": "application/json;charset=UTF-8"
+                }
+              ],
+              "body": "[\n    {\n        \"id\": 0,\n        \"name\": \"\",\n        \"price\": 0,\n        \"rating\": 0,\n        \"category\": {\n            \"id\": 0,\n            \"name\": \"\"\n        }\n    }\n]"
+            }
+          ],
+          "name": "findAllByPriceGreaterThan"
+        },
+        {
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "path": [
+                "api",
+                "v1",
+                "products",
+                "category"
+              ],
+              "query": [
+                {
+                  "key": "categoryId",
+                  "value": "",
+                  "equals": true,
+                  "description": ""
+                },
+                {
+                  "key": "price",
+                  "value": "",
+                  "equals": true,
+                  "description": ""
+                }
+              ],
+              "host": "http://localhost:8080",
+              "raw": "http://localhost:8080/api/v1/products/category"
+            }
+          },
+          "response": [
+            {
+              "name": "findAllByCategory_IdAndPriceLessThan-Example",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "path": [
+                    "api",
+                    "v1",
+                    "products",
+                    "category"
+                  ],
+                  "query": [
+                    {
+                      "key": "categoryId",
+                      "value": "",
+                      "equals": true,
+                      "description": ""
+                    },
+                    {
+                      "key": "price",
+                      "value": "",
+                      "equals": true,
+                      "description": ""
+                    }
+                  ],
+                  "host": "http://localhost:8080",
+                  "raw": "http://localhost:8080/api/v1/products/category"
+                }
+              },
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "date",
+                  "key": "date",
+                  "value": "Thu, 04 Apr 202420:49:15 GMT",
+                  "description": "The date and time that the message was sent"
+                },
+                {
+                  "name": "server",
+                  "key": "server",
+                  "value": "Apache-Coyote/1.1",
+                  "description": "A name for the server"
+                },
+                {
+                  "name": "transfer-encoding",
+                  "key": "transfer-encoding",
+                  "value": "chunked",
+                  "description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+                },
+                {
+                  "name": "content-type",
+                  "key": "content-type",
+                  "value": "application/json;charset=UTF-8"
+                }
+              ],
+              "body": "[\n    {\n        \"id\": 0,\n        \"name\": \"\",\n        \"price\": 0,\n        \"rating\": 0,\n        \"category\": {\n            \"id\": 0,\n            \"name\": \"\"\n        }\n    }\n]"
+            }
+          ],
+          "name": "findAllByCategory_IdAndPriceLessThan"
+        },
+        {
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "path": [
+                "api",
+                "v1",
+                "products",
+                "name"
+              ],
+              "query": [
+                {
+                  "key": "name",
+                  "value": "",
+                  "equals": true,
+                  "description": ""
+                }
+              ],
+              "host": "http://localhost:8080",
+              "raw": "http://localhost:8080/api/v1/products/name"
+            }
+          },
+          "response": [
+            {
+              "name": "findAllByNameContains-Example",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "path": [
+                    "api",
+                    "v1",
+                    "products",
+                    "name"
+                  ],
+                  "query": [
+                    {
+                      "key": "name",
+                      "value": "",
+                      "equals": true,
+                      "description": ""
+                    }
+                  ],
+                  "host": "http://localhost:8080",
+                  "raw": "http://localhost:8080/api/v1/products/name"
+                }
+              },
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "date",
+                  "key": "date",
+                  "value": "Thu, 04 Apr 202420:49:15 GMT",
+                  "description": "The date and time that the message was sent"
+                },
+                {
+                  "name": "server",
+                  "key": "server",
+                  "value": "Apache-Coyote/1.1",
+                  "description": "A name for the server"
+                },
+                {
+                  "name": "transfer-encoding",
+                  "key": "transfer-encoding",
+                  "value": "chunked",
+                  "description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+                },
+                {
+                  "name": "content-type",
+                  "key": "content-type",
+                  "value": "application/json;charset=UTF-8"
+                }
+              ],
+              "body": "[\n    {\n        \"id\": 0,\n        \"name\": \"\",\n        \"price\": 0,\n        \"rating\": 0,\n        \"category\": {\n            \"id\": 0,\n            \"name\": \"\"\n        }\n    }\n]"
+            }
+          ],
+          "name": "findAllByNameContains"
+        }
+      ],
+      "name": "ProductController",
+      "description": "ProductController"
+    },
+    {
+      "item": [
+        {
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "path": [
+                "api",
+                "v1",
+                "users"
+              ],
+              "query": [],
+              "host": "http://localhost:8080",
+              "raw": "http://localhost:8080/api/v1/users"
+            }
+          },
+          "response": [
+            {
+              "name": "getAllUsers-Example",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "path": [
+                    "api",
+                    "v1",
+                    "users"
+                  ],
+                  "query": [],
+                  "host": "http://localhost:8080",
+                  "raw": "http://localhost:8080/api/v1/users"
+                }
+              },
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "date",
+                  "key": "date",
+                  "value": "Thu, 04 Apr 202420:49:15 GMT",
+                  "description": "The date and time that the message was sent"
+                },
+                {
+                  "name": "server",
+                  "key": "server",
+                  "value": "Apache-Coyote/1.1",
+                  "description": "A name for the server"
+                },
+                {
+                  "name": "transfer-encoding",
+                  "key": "transfer-encoding",
+                  "value": "chunked",
+                  "description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+                },
+                {
+                  "name": "content-type",
+                  "key": "content-type",
+                  "value": "application/json;charset=UTF-8"
+                }
+              ],
+              "body": "[\n    {\n        \"id\": 0,\n        \"fname\": \"\",\n        \"lname\": \"\",\n        \"email\": \"\",\n        \"password\": \"\",\n        \"address\": {\n            \"id\": 0,\n            \"city\": \"\",\n            \"state\": \"\",\n            \"country\": \"\",\n            \"zip\": \"\",\n            \"street\": \"\"\n        }\n    }\n]"
+            }
+          ],
+          "name": "getAllUsers"
+        },
+        {
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "path": [
+                "api",
+                "v1",
+                "users",
+                ":id"
+              ],
+              "query": [],
+              "host": "http://localhost:8080",
+              "raw": "http://localhost:8080/api/v1/users/{id}"
+            }
+          },
+          "response": [
+            {
+              "name": "getUserById-Example",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "path": [
+                    "api",
+                    "v1",
+                    "users",
+                    ":id"
+                  ],
+                  "query": [],
+                  "host": "http://localhost:8080",
+                  "raw": "http://localhost:8080/api/v1/users/{id}"
+                }
+              },
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "date",
+                  "key": "date",
+                  "value": "Thu, 04 Apr 202420:49:15 GMT",
+                  "description": "The date and time that the message was sent"
+                },
+                {
+                  "name": "server",
+                  "key": "server",
+                  "value": "Apache-Coyote/1.1",
+                  "description": "A name for the server"
+                },
+                {
+                  "name": "transfer-encoding",
+                  "key": "transfer-encoding",
+                  "value": "chunked",
+                  "description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+                },
+                {
+                  "name": "content-type",
+                  "key": "content-type",
+                  "value": "application/json;charset=UTF-8"
+                }
+              ],
+              "body": "{\n    \"id\": 0,\n    \"fname\": \"\",\n    \"lname\": \"\",\n    \"email\": \"\",\n    \"password\": \"\",\n    \"address\": {\n        \"id\": 0,\n        \"city\": \"\",\n        \"state\": \"\",\n        \"country\": \"\",\n        \"zip\": \"\",\n        \"street\": \"\"\n    }\n}"
+            }
+          ],
+          "name": "getUserById"
+        },
+        {
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "description": ""
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              },
+              "raw": "{\n  \"id\": 0,\n  \"fname\": \"\",\n  \"lname\": \"\",\n  \"email\": \"\",\n  \"password\": \"\",\n  \"address\": {\n    \"id\": 0,\n    \"city\": \"\",\n    \"state\": \"\",\n    \"country\": \"\",\n    \"zip\": \"\",\n    \"street\": \"\"\n  }\n}"
+            },
+            "url": {
+              "path": [
+                "api",
+                "v1",
+                "users"
+              ],
+              "query": [],
+              "host": "http://localhost:8080",
+              "raw": "http://localhost:8080/api/v1/users"
+            }
+          },
+          "response": [
+            {
+              "name": "createUser-Example",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text",
+                    "description": ""
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  },
+                  "raw": "{\n    \"id\": 0,\n    \"fname\": \"\",\n    \"lname\": \"\",\n    \"email\": \"\",\n    \"password\": \"\",\n    \"address\": {\n        \"id\": 0,\n        \"city\": \"\",\n        \"state\": \"\",\n        \"country\": \"\",\n        \"zip\": \"\",\n        \"street\": \"\"\n    }\n}"
+                },
+                "url": {
+                  "path": [
+                    "api",
+                    "v1",
+                    "users"
+                  ],
+                  "query": [],
+                  "host": "http://localhost:8080",
+                  "raw": "http://localhost:8080/api/v1/users"
+                }
+              },
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "date",
+                  "key": "date",
+                  "value": "Thu, 04 Apr 202420:49:15 GMT",
+                  "description": "The date and time that the message was sent"
+                },
+                {
+                  "name": "server",
+                  "key": "server",
+                  "value": "Apache-Coyote/1.1",
+                  "description": "A name for the server"
+                },
+                {
+                  "name": "transfer-encoding",
+                  "key": "transfer-encoding",
+                  "value": "chunked",
+                  "description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+                },
+                {
+                  "name": "content-type",
+                  "key": "content-type",
+                  "value": "application/json;charset=UTF-8"
+                }
+              ],
+              "body": "{\n    \"id\": 0,\n    \"fname\": \"\",\n    \"lname\": \"\",\n    \"email\": \"\",\n    \"password\": \"\",\n    \"address\": {\n        \"id\": 0,\n        \"city\": \"\",\n        \"state\": \"\",\n        \"country\": \"\",\n        \"zip\": \"\",\n        \"street\": \"\"\n    }\n}"
+            }
+          ],
+          "name": "createUser"
+        },
+        {
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "description": ""
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              },
+              "raw": "{\n  \"id\": 0,\n  \"fname\": \"\",\n  \"lname\": \"\",\n  \"email\": \"\",\n  \"password\": \"\",\n  \"address\": {\n    \"id\": 0,\n    \"city\": \"\",\n    \"state\": \"\",\n    \"country\": \"\",\n    \"zip\": \"\",\n    \"street\": \"\"\n  }\n}"
+            },
+            "url": {
+              "path": [
+                "api",
+                "v1",
+                "users",
+                ":id"
+              ],
+              "query": [],
+              "host": "http://localhost:8080",
+              "raw": "http://localhost:8080/api/v1/users/{id}"
+            }
+          },
+          "response": [
+            {
+              "name": "updateUser-Example",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text",
+                    "description": ""
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  },
+                  "raw": "{\n    \"id\": 0,\n    \"fname\": \"\",\n    \"lname\": \"\",\n    \"email\": \"\",\n    \"password\": \"\",\n    \"address\": {\n        \"id\": 0,\n        \"city\": \"\",\n        \"state\": \"\",\n        \"country\": \"\",\n        \"zip\": \"\",\n        \"street\": \"\"\n    }\n}"
+                },
+                "url": {
+                  "path": [
+                    "api",
+                    "v1",
+                    "users",
+                    ":id"
+                  ],
+                  "query": [],
+                  "host": "http://localhost:8080",
+                  "raw": "http://localhost:8080/api/v1/users/{id}"
+                }
+              },
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "date",
+                  "key": "date",
+                  "value": "Thu, 04 Apr 202420:49:15 GMT",
+                  "description": "The date and time that the message was sent"
+                },
+                {
+                  "name": "server",
+                  "key": "server",
+                  "value": "Apache-Coyote/1.1",
+                  "description": "A name for the server"
+                },
+                {
+                  "name": "transfer-encoding",
+                  "key": "transfer-encoding",
+                  "value": "chunked",
+                  "description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+                },
+                {
+                  "name": "content-type",
+                  "key": "content-type",
+                  "value": "application/json;charset=UTF-8"
+                }
+              ],
+              "body": "{\n    \"id\": 0,\n    \"fname\": \"\",\n    \"lname\": \"\",\n    \"email\": \"\",\n    \"password\": \"\",\n    \"address\": {\n        \"id\": 0,\n        \"city\": \"\",\n        \"state\": \"\",\n        \"country\": \"\",\n        \"zip\": \"\",\n        \"street\": \"\"\n    }\n}"
+            }
+          ],
+          "name": "updateUser"
+        },
+        {
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+                "type": "text",
+                "description": ""
+              }
+            ],
+            "url": {
+              "path": [
+                "api",
+                "v1",
+                "users",
+                ":id"
+              ],
+              "query": [],
+              "host": "http://localhost:8080",
+              "raw": "http://localhost:8080/api/v1/users/{id}"
+            }
+          },
+          "response": [
+            {
+              "name": "deleteUser-Example",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/x-www-form-urlencoded",
+                    "type": "text",
+                    "description": ""
+                  }
+                ],
+                "url": {
+                  "path": [
+                    "api",
+                    "v1",
+                    "users",
+                    ":id"
+                  ],
+                  "query": [],
+                  "host": "http://localhost:8080",
+                  "raw": "http://localhost:8080/api/v1/users/{id}"
+                }
+              },
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "date",
+                  "key": "date",
+                  "value": "Thu, 04 Apr 202420:49:15 GMT",
+                  "description": "The date and time that the message was sent"
+                },
+                {
+                  "name": "server",
+                  "key": "server",
+                  "value": "Apache-Coyote/1.1",
+                  "description": "A name for the server"
+                },
+                {
+                  "name": "transfer-encoding",
+                  "key": "transfer-encoding",
+                  "value": "chunked",
+                  "description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+                },
+                {
+                  "name": "content-type",
+                  "key": "content-type",
+                  "value": "application/json;charset=UTF-8"
+                }
+              ],
+              "body": "null"
+            }
+          ],
+          "name": "deleteUser"
+        }
+      ],
+      "name": "UserController",
+      "description": "UserController"
+    }
+  ],
+  "info": {
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "name": "Spring_Data-20240404204915",
+    "description": "exported at 2024-04-04 20:49:15"
+  }
+}
