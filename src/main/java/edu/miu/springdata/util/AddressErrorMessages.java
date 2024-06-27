@@ -9,4 +9,7 @@ public class AddressErrorMessages {
         return "Address with id #" + addressId + " not found.";
     }
 
+    public static String addressAlreadyInUse(Long userId, Long addressId) {
+        return "Address with id #" + addressId + " is currently in use by user with id #" + userId + ".";
+    }
 }
