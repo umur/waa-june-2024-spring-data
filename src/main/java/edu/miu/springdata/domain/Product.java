@@ -3,8 +3,11 @@ package edu.miu.springdata.domain;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.List;
 
 @Data
@@ -26,10 +29,16 @@ public class Product {
     @Column(name = "rating", nullable = false)
     private double rating;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.PERSIST, fetch = FetchType.EAGER)
     @JoinColumn(name = "category_id", nullable = false)
+    @Fetch(FetchMode.JOIN)
     private Category category;
 
-    @OneToMany(mappedBy = "product")
+    @OneToMany(mappedBy = "product", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private List<Review> reviews;
+
+    @PrePersist
+    protected void onCreate() {
+        reviews = new ArrayList<>();
+    }
 }
