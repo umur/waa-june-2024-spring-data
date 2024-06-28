@@ -107,9 +107,9 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public Page<ReviewResponse> findAllReviews(Long productId, Pageable pageable) {
-        productRepository.findById(productId)
-                         .orElseThrow(() -> new ResourceNotFoundException(
-                                 ProductErrorMessages.productNotFound(productId)));
+        if (productRepository.findById(productId).isEmpty()) {
+            throw new ResourceNotFoundException(ProductErrorMessages.productNotFound(productId));
+        }
 
         return reviewRepository.findAllByProductId(productId, pageable)
                                .map(reviewResponse -> modelMapper.map(reviewResponse, ReviewResponse.class));
@@ -166,9 +166,10 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public void deleteProductReview(Long productId, Long reviewId) {
-        productRepository.findById(productId)
-                         .orElseThrow(() -> new ResourceNotFoundException(
-                                 ProductErrorMessages.productNotFound(productId)));
+        if (productRepository.findById(productId).isEmpty()) {
+            throw new ResourceNotFoundException(ProductErrorMessages.productNotFound(productId));
+        }
+
 
         Review review = reviewRepository.findById(reviewId)
                                         .orElseThrow(() -> new ResourceNotFoundException(
