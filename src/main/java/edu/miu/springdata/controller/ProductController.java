@@ -15,6 +15,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.math.BigDecimal;
+
 @Tag(name = "Products", description = "Operations related to products.")
 @RestController
 @RequestMapping("/products")
@@ -27,8 +29,23 @@ public class ProductController {
 
     @Operation(description = "Get products in a fixed size.")
     @GetMapping
-    public ResponseEntity<Page<ProductResponse>> getAllProducts(Pageable pageable) {
-        return ResponseEntity.ok(productService.findAll(pageable));
+    public ResponseEntity<Page<ProductResponse>> getAllProducts(
+            Pageable pageable,
+            @RequestParam(required = false, name = "maxPrice") BigDecimal maxPrice,
+            @RequestParam(required = false, name = "minPrice") BigDecimal minPrice,
+            @RequestParam(required = false, name = "category") Long categoryId,
+            @RequestParam(required = false, name = "keyword") String keyword
+                                                               ) {
+        if (maxPrice != null && categoryId != null) {
+            return ResponseEntity.ok(
+                    productService.findAllByPriceLessThanEqualAndCategoryId(maxPrice, categoryId, pageable));
+        } else if (keyword != null) {
+            return ResponseEntity.ok(productService.findAllByKeyword(keyword, pageable));
+        } else if (minPrice != null) {
+            return ResponseEntity.ok(productService.findAllByPriceGreaterThanEqual(minPrice, pageable));
+        } else {
+            return ResponseEntity.ok(productService.findAll(pageable));
+        }
     }
 
     @ApiResponses(value = {@ApiResponse(responseCode = "200"), @ApiResponse(responseCode = "404")})
