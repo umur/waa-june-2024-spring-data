@@ -8,7 +8,6 @@ import java.util.List;
 public interface ProductService {
     List<ProductDto> findAll();
 
-
     ProductDto save(ProductDto product);
 
     ProductDto update(Integer id, ProductDto product);

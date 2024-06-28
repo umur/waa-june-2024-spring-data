@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/address")
+@RequestMapping("/addresses")
 public class AddressController {
     private final AddressService addressService;
     @GetMapping
@@ -17,7 +17,7 @@ public class AddressController {
         return addressService.findAll();
     }
     @GetMapping("/{id}")
-    public AddressDto getById(@PathVariable Integer id){
+    public AddressDto getById(@PathVariable("id") Integer id){
         return addressService.findById(id);
     }
     @PostMapping
@@ -25,12 +25,12 @@ public class AddressController {
         return addressService.save(addressDto);
     }
 
-    @PutMapping("{/id}")
-    public AddressDto update(@PathVariable Integer id, @RequestBody AddressDto addressDto){
+    @PutMapping("/{id}")
+    public AddressDto update(@PathVariable("id") Integer id, @RequestBody AddressDto addressDto){
         return addressService.update(id, addressDto);
     }
     @DeleteMapping("/{id}")
-    public boolean delete(@PathVariable Integer id){
+    public boolean delete(@PathVariable("id") Integer id){
         return addressService.delete(id);
     }
 }

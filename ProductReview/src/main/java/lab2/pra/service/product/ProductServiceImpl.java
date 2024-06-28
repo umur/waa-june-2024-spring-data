@@ -78,7 +78,7 @@ public class ProductServiceImpl implements ProductService{
 
     @Override
     public List<ProductDto> findInCategoryCostingLessThan(Integer categoryId, double maxPrice) {
-        return productRepository.findByCategoryAndPriceLessThan(categoryId, maxPrice)
+        return productRepository.findByCategory_IdAndPriceLessThan(categoryId, maxPrice)
                 .stream()
                 .map(DtoAdapter.MAPPER::entityToDto)
                 .toList();
