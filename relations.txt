@@ -1,0 +1,2 @@
+Mapped By: bi-directional, strong side
+Join Column: Optional, Weak Side, 1 -> m, unidirectional
