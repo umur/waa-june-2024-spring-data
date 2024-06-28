@@ -1,19 +1,23 @@
 package com.waa.jpa.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.*;
+import lombok.Data;
 
 @Entity
+@Data
 public class Review {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String comment;
 
-    private int rating;
+    @ManyToOne
+    @JoinColumn(name = "product_id")
+    private Product product;
 
-//    @ManyToOne
-//    private Product product;
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user;
 }

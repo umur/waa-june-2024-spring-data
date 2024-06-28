@@ -7,7 +7,7 @@ import java.util.List;
 
 @Entity
 @Data
-public class Product {
+public class Category {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -15,14 +15,6 @@ public class Product {
 
     private String name;
 
-    @Column(unique = true)
-    private double price;
-
-    private String rating;
-
-    @OneToMany(mappedBy = "product")
-    private List<Review> reviews;
-
-    @ManyToOne
-    private Category category;
+    @OneToMany(mappedBy = "category")
+    private List<Product> products;
 }
