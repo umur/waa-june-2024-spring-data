@@ -7,6 +7,8 @@ import edu.miu.springdata.contract.SaveProductReviewRequest;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
+import java.math.BigDecimal;
+
 public interface ProductService {
     ProductResponse findById(Long id);
 
@@ -31,4 +33,15 @@ public interface ProductService {
                                       );
 
     void deleteProductReview(Long productId, Long reviewId);
+
+    Page<ProductResponse> findAllByPriceGreaterThanEqual(BigDecimal minPrice, Pageable pageable);
+
+    Page<ProductResponse> findAllByPriceLessThanEqualAndCategoryId(
+            BigDecimal maxPrice,
+            Long categoryId,
+            Pageable pageable
+                                                                  );
+
+    Page<ProductResponse> findAllByKeyword(String keyword, Pageable pageable);
+
 }

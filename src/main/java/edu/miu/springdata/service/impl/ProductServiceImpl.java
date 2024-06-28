@@ -23,6 +23,8 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import java.math.BigDecimal;
+
 @Service
 public class ProductServiceImpl implements ProductService {
     private final ProductRepository  productRepository;
@@ -176,5 +178,27 @@ public class ProductServiceImpl implements ProductService {
                                                 ReviewErrorMessages.reviewNotFound(reviewId)));
 
         reviewRepository.delete(review);
+    }
+
+    @Override
+    public Page<ProductResponse> findAllByPriceGreaterThanEqual(BigDecimal minPrice, Pageable pageable) {
+        return productRepository.findAllByPriceGreaterThanEqual(minPrice, pageable)
+                                .map(productResponse -> modelMapper.map(productResponse, ProductResponse.class));
+    }
+
+    @Override
+    public Page<ProductResponse> findAllByPriceLessThanEqualAndCategoryId(
+            BigDecimal maxPrice,
+            Long categoryId,
+            Pageable pageable
+                                                                         ) {
+        return productRepository.findAllByPriceLessThanEqualAndCategoryId(maxPrice, categoryId, pageable)
+                                .map(productResponse -> modelMapper.map(productResponse, ProductResponse.class));
+    }
+
+    @Override
+    public Page<ProductResponse> findAllByKeyword(String keyword, Pageable pageable) {
+        return productRepository.findAllByNameContaining(keyword, pageable)
+                                .map(productResponse -> modelMapper.map(productResponse, ProductResponse.class));
     }
 }
