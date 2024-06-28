@@ -24,12 +24,13 @@ public abstract class CrudController<T, ID> {
     @GetMapping("/{id}")
     public ResponseEntity<T> getById(@PathVariable ID id) {
         Optional<T> optionalEntity = crudService.getById(id);
-        return optionalEntity.map(entity -> ResponseEntity.ok(entity))
+        return optionalEntity.map(ResponseEntity::ok)
                 .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
     @PostMapping
     public ResponseEntity<Void> create(@RequestBody T entity) {
+        crudService.create(entity);
         URI location = ServletUriComponentsBuilder.fromCurrentRequestUri()
                 .path("/{id}")
                 .buildAndExpand(getId(entity))
