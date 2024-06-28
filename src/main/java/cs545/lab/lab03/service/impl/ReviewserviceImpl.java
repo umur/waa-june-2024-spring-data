@@ -1,6 +1,8 @@
 package cs545.lab.lab03.service.impl;
 
+import cs545.lab.lab03.entity.Product;
 import cs545.lab.lab03.entity.Review;
+import cs545.lab.lab03.repo.ProductRepo;
 import cs545.lab.lab03.repo.ReviewRepo;
 import cs545.lab.lab03.service.ReviewService;
 import lombok.RequiredArgsConstructor;
@@ -14,6 +16,8 @@ import java.util.Optional;
 public class ReviewserviceImpl implements ReviewService {
 
     private final ReviewRepo reviewRepo;
+
+    private final ProductRepo productRepo;
 
     @Override
     public Review addReview(Review review) {
@@ -37,7 +41,8 @@ public class ReviewserviceImpl implements ReviewService {
 
     @Override
     public List<Review> findByProductId(int productId) {
-        return reviewRepo.findByProductId(productId);
+        Optional<Product> product = productRepo.findById(productId);
+        return product.map(Product::getReviews).orElse(null);
     }
 
 

@@ -13,6 +13,6 @@ public class Category {
     private int id;
     private String name;
 
-    @OneToMany(mappedBy = "category")
+    @OneToMany(cascade = CascadeType.PERSIST,fetch = FetchType.EAGER)
     List<Product> products;
 }

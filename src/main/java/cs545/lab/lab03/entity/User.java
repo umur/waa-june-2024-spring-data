@@ -16,7 +16,7 @@ public class User {
     private String email;
     private String password;
 
-    @OneToMany(mappedBy = "user")
+    @OneToMany(cascade = CascadeType.PERSIST,fetch = FetchType.EAGER)
     private List<Review> reviews;
 
     @OneToOne

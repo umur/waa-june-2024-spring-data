@@ -15,10 +15,10 @@ public class Product {
     private double price;
     private double rating;
 
-    @ManyToOne
-    @JoinColumn(name = "category_id")
-    private Category category;
+//    @ManyToOne
+//    @JoinColumn(name = "category_id")
+//    private Category category;
 
-    @OneToMany(mappedBy = "product")
+    @OneToMany(cascade = CascadeType.PERSIST,fetch = FetchType.EAGER)
     private List<Review> reviews;
 }

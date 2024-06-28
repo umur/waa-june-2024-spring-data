@@ -2,9 +2,6 @@ package cs545.lab.lab03.controller;
 
 import cs545.lab.lab03.entity.Review;
 import cs545.lab.lab03.service.ReviewService;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -56,5 +53,6 @@ public class ReviewController {
     @GetMapping("/product/{productId}")
     public List<Review> getReviewsByProductId(@PathVariable int productId) {
         return reviewService.findByProductId(productId);
+
     }
 }

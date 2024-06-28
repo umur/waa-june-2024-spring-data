@@ -10,6 +10,6 @@ import java.util.List;
 public interface ProductRepo extends JpaRepository<Product, Integer> {
 
     List<Product> findByPriceGreaterThan(double minPrice);
-    List<Product> findByNameAndPriceLessThan(String name,double maxPrice);
+
     List<Product> findByNameContaining(String keyword);
 }

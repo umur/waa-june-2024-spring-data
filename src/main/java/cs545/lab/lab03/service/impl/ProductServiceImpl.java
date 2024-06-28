@@ -1,6 +1,8 @@
 package cs545.lab.lab03.service.impl;
 
+import cs545.lab.lab03.entity.Category;
 import cs545.lab.lab03.entity.Product;
+import cs545.lab.lab03.repo.CategoryRepo;
 import cs545.lab.lab03.repo.ProductRepo;
 import cs545.lab.lab03.service.ProductService;
 import lombok.RequiredArgsConstructor;
@@ -14,6 +16,8 @@ import java.util.Optional;
 public class ProductServiceImpl implements ProductService {
 
     private final ProductRepo productRepo;
+
+    private final CategoryRepo categoryRepo;
 
     @Override
     public List<Product> getAllProducts() {
@@ -42,7 +46,12 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public List<Product> findByNameAndPriceLessThan(String name, double maxPrice) {
-        return productRepo.findByNameAndPriceLessThan(name, maxPrice);
+
+        Category category = categoryRepo.findByName(name);
+        List<Product> products = category.getProducts();
+        products.removeIf(product -> product.getPrice() > maxPrice);
+
+        return products;
     }
 
     @Override

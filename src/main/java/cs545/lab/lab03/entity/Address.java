@@ -13,6 +13,6 @@ public class Address {
     private String city;
     private String zip;
 
-    @OneToOne(mappedBy = "address")
-    private User user;
+//    @OneToOne(mappedBy = "address")
+//    private User user;
 }
