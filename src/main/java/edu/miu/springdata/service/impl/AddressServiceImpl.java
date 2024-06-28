@@ -77,6 +77,10 @@ public class AddressServiceImpl implements AddressService {
 
     @Override
     public AddressResponse addAddress(SaveAddressRequest addressRequest) {
-        return null;
+        Address address = modelMapper.map(addressRequest, Address.class);
+
+        address = addressRepository.save(address);
+
+        return modelMapper.map(address, AddressResponse.class);
     }
 }
