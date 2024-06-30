@@ -1,0 +1,23 @@
+
+	java:S112!"FDefine and throw a dedicated exception instead of using a generic one.(À¬ä‰ÿÿÿÿÿ8ï„°Ù…2J$94bf4c62-6b9c-400d-892d-1bd7581e90a5
+	java:S112G"FDefine and throw a dedicated exception instead of using a generic one.(Í·ïíùÿÿÿÿ8ï„°Ù…2J$d64e64f9-1e0f-4b4b-87a1-0fab1586f95f
+	java:S112V"FDefine and throw a dedicated exception instead of using a generic one.(Í·ïíùÿÿÿÿ8ï„°Ù…2J$a981d382-2850-476b-9bea-af0ab76d0fb5
+	java:S112‚"FDefine and throw a dedicated exception instead of using a generic one.(şÓòüÿÿÿÿ8ï„°Ù…2J$7da6384f-cdda-4f61-8dd0-625476c804a6
+–
+java:S1192G"NDefine a constant instead of duplicating this literal " is not found" 3 times.(Í·ïíùÿÿÿÿ8ï„°Ù…2J$f9016d52-facf-47d1-8eaa-5c673c5b508f
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ğ„°Ù…2J$6fd5f547-d6ca-48cb-807f-60bf7390f1a5
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ğ„°Ù…2J$e6da7a0d-a2bb-441e-9a31-01869946728d
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ğ„°Ù…2J$baadd2d9-55d3-4d5b-b5da-09621add406d
+Â
+java:S6204:"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ŸÌ óûÿÿÿÿ8ô„°Ù…2J$66e10786-530c-4701-b8b6-0f70e1eaa284
+Â
+java:S6204^"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ŸÌ óûÿÿÿÿ8ö„°Ù…2J$d6c7adbf-a803-4da3-afcb-1b16d293fe7a
+Â
+java:S6204d"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ŸÌ óûÿÿÿÿ8ö„°Ù…2J$11092cff-647e-4295-b8bf-61a17c1606e1
+Â
+java:S6204j"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ŸÌ óûÿÿÿÿ8÷„°Ù…2J$8a41b9f2-943b-4089-bd22-1c91272df607
+¾
+java:S6204œ"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8ü„°Ù…2J$0f5a908d-6f18-483c-8e09-520ed184c17f

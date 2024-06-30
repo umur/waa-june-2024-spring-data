@@ -1,0 +1,11 @@
+
+	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(¶µ¬»øÿÿÿÿ8İÑ„³…2J$08ce9321-1271-4394-8cf6-7f567de07e55
+	java:S112""FDefine and throw a dedicated exception instead of using a generic one.(­ÜÖÊşÿÿÿÿ8ßÑ„³…2J$9672fcc8-f83c-46c0-b2b6-1b88e34d7d8b
+	java:S112+"FDefine and throw a dedicated exception instead of using a generic one.(­ÜÖÊşÿÿÿÿ8ßÑ„³…2J$a9681b52-77bc-4cbe-81c8-da9b4ac12c4d
+	java:S1124"FDefine and throw a dedicated exception instead of using a generic one.(­ÜÖÊşÿÿÿÿ8®¡ÅÔ…2J$ff3cd04d-7d54-4d02-9ba9-03800aab12b4
+–
+java:S1192""NDefine a constant instead of duplicating this literal "Category ID: " 3 times.(­ÜÖÊşÿÿÿÿ8®¡ÅÔ…2J$ec08c2c2-3113-48b7-8780-8bddd711ae9f
+–
+java:S1192""NDefine a constant instead of duplicating this literal " is not found" 3 times.(­ÜÖÊşÿÿÿÿ8®¡ÅÔ…2J$6d0d0847-9ae6-4932-a45a-6bafff689583
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8âÑ„³…2J$b754b199-59ba-4344-9f41-8ffd66a215c7

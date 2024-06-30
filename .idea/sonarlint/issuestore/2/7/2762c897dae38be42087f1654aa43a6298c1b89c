@@ -1,0 +1,11 @@
+
+	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Î¯ˆíüÿÿÿÿ8ÌŒ«×…2J$a7b59d58-b3ea-4f61-88dd-7ddd9436bc6e
+ˆ	java:S112!"FDefine and throw a dedicated exception instead of using a generic one.(«ù×ë8ÌŒ«×…2J$67d58680-5dee-4317-96ae-b1a4868eb6e0
+ˆ	java:S112*"FDefine and throw a dedicated exception instead of using a generic one.(«ù×ë8ÌŒ«×…2J$13c12fdf-e4dd-456f-9710-4d47bc99e3ca
+ˆ	java:S1123"FDefine and throw a dedicated exception instead of using a generic one.(«ù×ë8ÌŒ«×…2J$35ae048b-aadc-4599-8e9d-962b62a78ffc
+
+java:S1192!"MDefine a constant instead of duplicating this literal "Address ID: " 3 times.(«ù×ë8ÌŒ«×…2J$46909ea4-1beb-49d4-b1d2-f3be9fab4d1a
+
+java:S1192!"MDefine a constant instead of duplicating this literal "is not found" 3 times.(«ù×ë8ÌŒ«×…2J$a7f29e0e-6393-4674-b8b5-216a2d105b77
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ÍŒ«×…2J$fe637a90-48ce-4a9c-a8e0-5fd0fbdaa7bf
