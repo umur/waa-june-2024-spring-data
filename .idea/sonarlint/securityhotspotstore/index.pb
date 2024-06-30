@@ -15,8 +15,6 @@ m
 =SpringDataI/src/main/java/com/springdatai/domain/Address.java,e/4/e4e61b30f916e3bd2751f64825b4f723a3363d88
 l
 <SpringDataI/src/main/java/com/springdatai/domain/Review.java,c/0/c05e2cf887e769e43ca9d9c4efaf530610324e95
-v
-FSpringDataI/src/main/java/com/springdatai/repository/CategoryRepo.java,f/d/fd587e56cfef73a49440c687d3fd1cc1a84ab1f6
 |
 LSpringDataI/src/main/java/com/springdatai/repository/CategoryRepository.java,7/0/7049f0849812b054166e080cbb668ae1f9a72087
 {
@@ -63,3 +61,5 @@ t
 DSpringDataI/src/main/java/com/springdatai/service/DTO/ReviewDTO.java,0/d/0d7118abf0c0086a872f9ed736f678f974c9dbd3
 u
 ESpringDataI/src/main/java/com/springdatai/service/DTO/ProductDTO.java,0/0/002c8bc9d9814ae60f00393d789e0610331951ac
+U
+%Spring_Data-I.postman_collection.json,2/6/2699fcda16d0caf01c0c8b8afed71b9f27bf0ba5
