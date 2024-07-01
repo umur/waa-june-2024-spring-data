@@ -8,8 +8,11 @@ import java.util.Optional;
 public interface ProductService {
     List<Product> findAll();
     Optional<Product> findByProductId(Long id);
-    void save(Product product);
-    Product update(Product product);
+    Product save(Product product);
+    Product update(Product product, Long id);
     void delete(Long id);
 
+    List<Product> findAllByMinPrice(double minPrice);
+    List<Product> findAllByCategoryAndPriceLessThan(Long categoryId, Double price);
+    List<Product> searchByName(String keyword);
 }

@@ -23,9 +23,10 @@ public class User {
 
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name="address_id")
+    @JsonIgnore
     private Address address;
 
-    @OneToMany(mappedBy = "user")
+    @OneToMany(mappedBy = "user", cascade=CascadeType.ALL)
     @JsonIgnore
     private List<Review> reviews;
 }

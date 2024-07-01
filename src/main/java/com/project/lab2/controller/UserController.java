@@ -25,21 +25,17 @@ public class UserController {
     }
 
     @PostMapping
-    public void  addUser(@RequestBody User user) {
-        userService.save(user);
+    public User  addUser(@RequestBody User user) {
+        return userService.save(user);
     }
 
     @DeleteMapping("/{id}")
     public void  deleteUser(@PathVariable Long id) {
-        userService.deleteById(id);
+        userService.delete(id);
     }
 
     @PutMapping("/{id}")
     public User updateReview(@PathVariable Long id, @RequestBody User user) {
-        Optional<User> usr = userService.findByUserId(id);
-        if (usr.isPresent()) {
-            return userService.update(user);
-        }
-        return null;
+            return userService.update(user, id);
     }
 }

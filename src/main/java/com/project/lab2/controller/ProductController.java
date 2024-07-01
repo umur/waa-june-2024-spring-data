@@ -1,12 +1,14 @@
 package com.project.lab2.controller;
 
 import com.project.lab2.entity.Product;
+import com.project.lab2.service.CategoryService;
 import com.project.lab2.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
+
 
 @RestController
 @RequestMapping("/products")
@@ -29,26 +31,34 @@ public class ProductController {
     }
 
     @PostMapping
-    public void  addProduct(@RequestBody Product product) {
-        productService.save(product);
+    public Product  addProduct(@RequestBody Product product) {
+        return productService.save(product);
     }
 
     @DeleteMapping("/{id}")
     public void  deleteProduct(@PathVariable Long id) {
-        Optional<Product> product = productService.findByProductId(id);
-        if (product.isPresent()) {
-            productService.findByProductId(id);
-        }
-        return;
+            productService.delete(id);
     }
 
     @PutMapping("/{id}")
     public Product updateProduct(@PathVariable Long id, @RequestBody Product product) {
-        Optional<Product> prod = productService.findByProductId(id);
-        if (prod.isPresent()) {
-            return productService.update(product);
-        }
-        return null;
+        return productService.update(product, id);
+    }
+
+    @GetMapping("/price")
+    public List<Product> getMinPrice(@RequestParam double price) {
+        return productService.findAllByMinPrice(price);
+    }
+
+    @GetMapping("category-price")
+    public List<Product> getCategoryCostLessThanPrice(@RequestParam Long categoryId, @RequestParam double price) {
+        return productService.findAllByCategoryAndPriceLessThan(categoryId, price);
+
+    }
+
+    @GetMapping("/search")
+    public List<Product> search(@RequestParam String keyword) {
+        return productService.searchByName(keyword);
     }
 
 }

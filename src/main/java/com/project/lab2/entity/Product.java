@@ -4,6 +4,8 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
 
 import java.util.List;
 
@@ -19,7 +21,7 @@ public class Product {
     private int rating;
 
     @ManyToOne
-    @JoinColumn(name="category_id")
+    @Fetch(FetchMode.JOIN)
     @JsonIgnore
     private Category category;
 

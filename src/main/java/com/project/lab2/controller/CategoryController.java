@@ -31,15 +31,12 @@ public class CategoryController {
 
     @DeleteMapping("/{id}")
     public void  deleteCategory(@PathVariable Long id) {
-        categoryService.findByCategoryId(id);
+        categoryService.delete(id);
     }
 
     @PutMapping("/{id}")
     public Category updateCategory(@PathVariable Long id, @RequestBody Category category) {
-        Optional<Category> cat = categoryService.findByCategoryId(id);
-        if (cat.isPresent()) {
-            return categoryService.update(category);
-        }
-        return null;
+        return categoryService.update(category, id);
+
     }
 }

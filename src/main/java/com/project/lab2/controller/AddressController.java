@@ -26,8 +26,8 @@ public class AddressController {
     }
 
     @PostMapping
-    public void  addAddress(@RequestBody Address address) {
-        addressService.save(address);
+    public Address  addAddress(@RequestBody Address address) {
+        return addressService.save(address);
     }
 
     @DeleteMapping("/{id}")
@@ -37,10 +37,7 @@ public class AddressController {
 
     @PutMapping("/{id}")
     public Address updateAddress(@PathVariable Long id, @RequestBody Address address) {
-        Optional<Address> addr = addressService.findByAddressId(id);
-        if (addr.isPresent()) {
-            return addressService.update(address);
-        }
-        return null;
+            return addressService.update(address, id);
+
     }
 }

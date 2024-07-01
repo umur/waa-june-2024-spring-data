@@ -15,12 +15,12 @@ public class Review {
     private Long id;
     private String comment;
 
-    @ManyToOne
+    @ManyToOne(cascade=CascadeType.ALL)
     @JoinColumn(name = "user_id")
     @JsonIgnore
     private User user;
 
-    @ManyToOne
+    @ManyToOne(cascade=CascadeType.ALL)
     @JoinColumn(name = "product_id")
     @JsonIgnore
     private Product product;

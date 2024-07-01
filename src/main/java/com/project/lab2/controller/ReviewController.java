@@ -10,22 +10,30 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/reviews")
 public class ReviewController {
-    @Autowired
-    private ReviewService reviewService;
+
+    private final ReviewService reviewService;
+
+    public ReviewController(ReviewService reviewService) {
+        this.reviewService = reviewService;
+    }
 
     @GetMapping
     public List<Review> getReviews() {
         return reviewService.findAll();
     }
 
+    @GetMapping("/product/{productId}")
+    public List<Review> getProductReviews(@PathVariable Long productId) {
+        return reviewService.findAllReviewsByProductId(productId);
+    }
     @GetMapping("/{id}")
     public Optional<Review> getReviewById(@PathVariable Long id) {
         return reviewService.findReviewById(id);
     }
 
     @PostMapping
-    public void  addReview(@RequestBody Review review) {
-        reviewService.save(review);
+    public Review  addReview(@RequestBody Review review) {
+        return reviewService.save(review);
     }
 
     @DeleteMapping("/{id}")
@@ -35,10 +43,7 @@ public class ReviewController {
 
     @PutMapping("/{id}")
     public Review updateReview(@PathVariable Long id, @RequestBody Review review) {
-        Optional<Review> rev = reviewService.findReviewById(id);
-        if (rev.isPresent()) {
-            return reviewService.update(review);
-        }
-        return null;
+        return reviewService.update(review, id);
     }
+
 }

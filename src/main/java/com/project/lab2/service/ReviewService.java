@@ -7,8 +7,9 @@ import java.util.Optional;
 
 public interface ReviewService {
     List<Review> findAll();
-    void save(Review review);
+    Review save(Review review);
     void deleteByReviewId(Long id);
-    Review update(Review review);
+    Review update(Review review, Long id);
     Optional<Review> findReviewById(Long id);
+    List<Review> findAllReviewsByProductId(Long productId);
 }
